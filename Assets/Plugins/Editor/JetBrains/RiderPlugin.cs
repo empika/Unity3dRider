@@ -268,6 +268,12 @@ namespace Plugins.Editor.JetBrains
     {
       return Enabled;
     }
+    
+    [MenuItem("Assets/Print Rider Debug Port", false, 1000)]
+    static void PrintRiderDebugPort()
+    {
+        Log("Debug port: " + GetDebugPort().ToString());
+    }
 
     /// <summary>
     /// Force Unity To Write Project File
